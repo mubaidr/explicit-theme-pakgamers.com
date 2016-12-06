@@ -9,6 +9,9 @@
 */
 
 @import url("../explicit/style.css");
+
+/*Body backgorund image*/
+
 body.home.page.it-background.bp-page {
     background-image: url('images/OrangeSquaresBG_updated.jpg')!important;
     background-size: contain!important;
@@ -17,56 +20,89 @@ body.home.page.it-background.bp-page {
 }
 
 
-/*Hide shit menu*/
+/*Hide shit menu: section menu in the main menu*/
 
 #new-articles {
     display: none!important;
 }
 
+
+/*Main header continaer*/
+
 #header {
     background-color: #302820;
 }
+
+
+/*Main menu bar, sticky bar*/
 
 #sticky-bar {
     background-color: #241b17;
     border-top: none;
 }
 
+
+/*Sidebar main menu*/
+
 #sticky-menu {
     background-color: #241b17;
 }
 
+
+/*Hide header in sidebar main menu*/
+
 #sticky-menu .mm-header {
     display: none!important;
 }
+
+
+/*flat style search bar in sidebar main menu*/
 
 #sticky-menu.mm-menu .mm-search input {
     border-radius: 0;
     background-color: #302820;
 }
 
+
+/*Sidebar navigation list moved to bottom*/
+
 #menu-section-menu.mm-list,
 #menu-secondary-menu.mm-list {
     padding-top: 50px!important;
 }
+
+
+/*make barheader sit inside page contianer*/
 
 .bar-header.page-controls {
     top: 0;
     background-color: #241b17;
 }
 
+
+/*Remove border from social share buttons*/
+
 .share-wrapper .addthis_native_counter_parent,
 .share-wrapper .addthis_button_compact {
     border-left: none;
 }
 
+
+/*Header bar Page actions .e.g like, views*/
+
 .bar-controls .control-box {
     border-right: none;
 }
 
+
+/*Header bar in post page with views, likes*/
+
 .bar-header {
     border: none!important;
 }
+
+
+/*Page container main area*/
 
 div.after-header>.container,
 .container.boxed,
@@ -75,9 +111,15 @@ div.after-header>.container,
     background-color: #302820;
 }
 
+
+/*Header title need to be centred as icons are hidden*/
+
 #section-menu .category-title {
     margin-top: 12px;
 }
+
+
+/*Main menu link color*/
 
 #section-menu a {
     color: #fab240;
@@ -87,9 +129,15 @@ div.after-header>.container,
     color: #fbcd67;
 }
 
+
+/*hide main menu title color*/
+
 #section-menu .category-icon {
     display: none!important;
 }
+
+
+/*search and login contorls in main menu bar*/
 
 #sticky-controls a,
 #random-article,
@@ -97,14 +145,23 @@ div.after-header>.container,
     color: #fab240;
 }
 
+
+/*Sidebar menu hamburger icon color*/
+
 #sticky-menu-selector span {
     color: #fab240;
 }
+
+
+/*Sidebar links color*/
 
 .mm-list>li>a,
 .mm-list>li>span {
     color: #fab240;
 }
+
+
+/*Header bar for widgets*/
 
 .widgets .header {
     width: 100%;
@@ -117,6 +174,9 @@ div.after-header>.container,
     background-color: #fbcd67;
     width: 100%;
 }
+
+
+/*Header bar icon*/
 
 .widgets .header-icon,
 .widgets .bar-label .label-text>span {
