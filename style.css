@@ -1,0 +1,148 @@
+/*
+ Theme Name:   Pakgamers theme
+ Theme URI:    http://www.pakgamers.com/
+ Description:  A custom styles for Pakgamers.com 
+ Author:       mubaidr@gmail.com
+ Author URI:   www.github.com/mubaidr
+ Template:     explicit
+ Version:      1.0.0
+*/
+
+@import url("../explicit/style.css");
+body.home.page.it-background.bp-page {
+    background-image: url('images/OrangeSquaresBG_updated.jpg')!important;
+    background-size: contain!important;
+    background-position: center!important;
+    background-repeat: repeat!important;
+}
+
+
+/*Hide shit menu*/
+
+#new-articles {
+    display: none!important;
+}
+
+#header {
+    background-color: #302820;
+}
+
+#sticky-bar {
+    background-color: #241b17;
+    border-top: none;
+}
+
+#sticky-menu {
+    background-color: #241b17;
+}
+
+#sticky-menu .mm-header {
+    display: none!important;
+}
+
+#sticky-menu.mm-menu .mm-search input {
+    border-radius: 0;
+    background-color: #302820;
+}
+
+#menu-section-menu.mm-list,
+#menu-secondary-menu.mm-list {
+    padding-top: 50px!important;
+}
+
+.bar-header.page-controls {
+    top: 0;
+    background-color: #241b17;
+}
+
+.share-wrapper .addthis_native_counter_parent,
+.share-wrapper .addthis_button_compact {
+    border-left: none;
+}
+
+.bar-controls .control-box {
+    border-right: none;
+}
+
+.bar-header {
+    border: none!important;
+}
+
+div.after-header>.container,
+.container.boxed,
+.ratings .rating-label,
+.ratings.stars-wrapper .rating-value-wrapper {
+    background-color: #302820;
+}
+
+#section-menu .category-title {
+    margin-top: 12px;
+}
+
+#section-menu a {
+    color: #fab240;
+}
+
+#section-menu a:hover .category-title {
+    color: #fbcd67;
+}
+
+#section-menu .category-icon {
+    display: none!important;
+}
+
+#sticky-controls a,
+#random-article,
+#menu-search-button span {
+    color: #fab240;
+}
+
+#sticky-menu-selector span {
+    color: #fab240;
+}
+
+.mm-list>li>a,
+.mm-list>li>span {
+    color: #fab240;
+}
+
+.widgets .header {
+    width: 100%;
+    background-color: #fbcd67;
+    border-color: #fab240;
+}
+
+.widgets .header .bar-label,
+.widgets .no-color .bar-label {
+    background-color: #fbcd67;
+    width: 100%;
+}
+
+.widgets .header-icon,
+.widgets .bar-label .label-text>span {
+    color: #000;
+}
+
+
+/*Headings*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #95959f;
+}
+
+h1.main-title,
+h1.page-title {
+    margin-top: 3%;
+}
+
+
+/*alerts*/
+
+.alert {
+    border-radius: 0;
+}
