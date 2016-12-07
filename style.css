@@ -8,15 +8,20 @@
  Version:      1.0.0
 */
 
-@import url("../explicit/style.css");
+* {
+    box-shadow: none!important;
+}
+
 
 /*Body backgorund image*/
 
 body.home.page.it-background.bp-page {
-    background-image: url('images/OrangeSquaresBG_updated.jpg')!important;
+    /*background-image: url('images/OrangeSquaresBG_updated.jpg')!important;
     background-size: contain!important;
     background-position: center!important;
-    background-repeat: repeat!important;
+    background-repeat: repeat!important;*/
+    background-image: none!important;
+    background-color: #BF360C!important;
 }
 
 
@@ -29,15 +34,16 @@ body.home.page.it-background.bp-page {
 
 /*Main header continaer*/
 
-#header {
+
+/*#header {
     background-color: #302820;
-}
+}*/
 
 
 /*Main menu bar, sticky bar*/
 
 #sticky-bar {
-    background-color: #241b17;
+    background-color: #212121;
     border-top: none;
 }
 
@@ -45,7 +51,7 @@ body.home.page.it-background.bp-page {
 /*Sidebar main menu*/
 
 #sticky-menu {
-    background-color: #241b17;
+    background-color: #212121;
 }
 
 
@@ -60,7 +66,8 @@ body.home.page.it-background.bp-page {
 
 #sticky-menu.mm-menu .mm-search input {
     border-radius: 0;
-    background-color: #302820;
+    background-color: #212121;
+    border: 1px solid #BF360C;
 }
 
 
@@ -76,7 +83,7 @@ body.home.page.it-background.bp-page {
 
 .bar-header.page-controls {
     top: 0;
-    background-color: #241b17;
+    background-color: #212121;
 }
 
 
@@ -108,7 +115,7 @@ div.after-header>.container,
 .container.boxed,
 .ratings .rating-label,
 .ratings.stars-wrapper .rating-value-wrapper {
-    background-color: #302820;
+    background-color: #212121;
 }
 
 
@@ -122,11 +129,14 @@ div.after-header>.container,
 /*Main menu link color*/
 
 #section-menu a {
-    color: #fab240;
+    font-weight: bold;
+    color: #fff;
+    /*opacity: 0.8;*/
 }
 
 #section-menu a:hover .category-title {
-    color: #fbcd67;
+    color: #BF360C;
+    /*opacity: 1;*/
 }
 
 
@@ -142,14 +152,52 @@ div.after-header>.container,
 #sticky-controls a,
 #random-article,
 #menu-search-button span {
-    color: #fab240;
+    color: #fff;
+}
+
+#sticky-controls a:hover,
+#random-article:hover,
+#menu-search-button span:hover {
+    color: #BF360C!important;
+}
+
+#menu-search input#s {
+    border-right: 1px solid #BF360C;
 }
 
 
 /*Sidebar menu hamburger icon color*/
 
 #sticky-menu-selector span {
-    color: #fab240;
+    color: #fff;
+}
+
+#sticky-menu-selector:hover span {
+    color: #BF360C;
+}
+
+
+/*main menu login form*/
+
+.sticky-form .input-group .input-group-addon.at-symbol {
+    padding: 5px 9px;
+}
+
+#sticky-register-submit,
+#sticky-login-submit {
+    margin-right: 8px;
+    border-radius: 0;
+    color: #fff!important;
+    background-color: #BF360C;
+}
+
+#sticky-register-submit:hover,
+#sticky-login-submit:hover {
+    background-color: #000;
+}
+
+.input-group-addon {
+    border-radius: 0;
 }
 
 
@@ -157,12 +205,21 @@ div.after-header>.container,
 
 .mm-list>li>a,
 .mm-list>li>span {
-    color: #fab240;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mm-list>li:hover>a,
+.mm-list>li:hover>span {
+    color: #BF360C!important;
+    font-weight: bold;
 }
 
 
 /*Header bar for widgets*/
 
+
+/*
 .widgets .header {
     width: 100%;
     background-color: #fbcd67;
@@ -173,15 +230,17 @@ div.after-header>.container,
 .widgets .no-color .bar-label {
     background-color: #fbcd67;
     width: 100%;
-}
+}*/
 
 
 /*Header bar icon*/
 
+
+/*
 .widgets .header-icon,
 .widgets .bar-label .label-text>span {
     color: #000;
-}
+}*/
 
 
 /*Headings*/
@@ -192,7 +251,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #95959f;
+    color: #fff;
 }
 
 h1.main-title,
@@ -205,4 +264,182 @@ h1.page-title {
 
 .alert {
     border-radius: 0;
+}
+
+
+/*Accent color*/
+
+.sticky-form .sticky-submit,
+#new-articles .selector.active,
+#new-articles .post-container a:hover,
+.article-panel.active .category-icon-wrapper,
+.article-panel.active .user_rating,
+.porthole-color,
+.hero-label,
+.headliner-label,
+.active .headliner-readmore .readmore,
+.trending-color,
+.postinfo .post-tags a:hover {
+    color: #BF360C!important;
+}
+
+a:hover,
+#sticky-menu-selector:hover,
+#sticky-controls a:hover,
+#sticky-controls a.active,
+#menu-search-button.active span,
+#menu-search-button.hover span,
+#random-article:hover,
+.bar-header a:hover,
+.utility-menu a:hover,
+.bar-selected .selector-icon,
+.sort-buttons a:hover,
+.sort-buttons a.active,
+.sort-buttons li.active a,
+.sortbar.dark .sort-buttons a:hover,
+.sortbar.dark .sort-buttons a.active,
+.loop h2 a:hover,
+.post-blog.articles.gradient .article-panel.active h2 a,
+.post-blog.articles.gradient .sticky-post .theme-icon-pin,
+.active .load-more,
+.active .load-more>span,
+.headliner-panel.active .headliner-info a.title,
+.trending-panel.active .trending-number .metric,
+.trending-panel.active .trending-title,
+.top-ten-panel.active .top-ten-number,
+.top-ten-panel.active .top-ten-title,
+.compact-panel.active .article-title,
+.border-panel.active .article-title,
+.widgets .more-link:hover,
+.widgets .more-link:hover span,
+.trending-bar.active .title,
+.active .trending-meta,
+.widgets .loop .more-link:hover,
+#widgets-topten .active .top-ten-title,
+#widgets-topten .active .top-ten-number,
+.widgets .it-widget-tabs .sort-buttons a.active,
+.widgets .it-widget-tabs .ui-tabs-active a,
+.connect-counts .social-counts .social-panel span,
+.connect-counts .social-counts a:hover,
+.social-counts .social-panel span,
+.social-counts a:hover,
+.widgets #wp-calendar a:hover,
+#footer a:hover,
+#footer.widgets #wp-calendar a:hover,
+#footer .sort-buttons a.active,
+#footer .top-ten-panel.active .top-ten-number,
+#footer .top-ten-panel.active .top-ten-title,
+#footer .compact-panel.active .article-title,
+#footer.widgets .header .more-link:hover,
+#footer.widgets .header .more-link:hover span,
+#footer .social-counts .social-panel span,
+#footer .social-counts a:hover,
+#footer.widgets .it-widget-tabs .sort-buttons a.active,
+#footer.widgets .it-widget-tabs .ui-tabs-active a,
+#footer.widgets .more-link:hover,
+#footer.widgets .more-link:hover span,
+#footer #widgets-topten .active .top-ten-title,
+#footer #widgets-topten .active .top-ten-number,
+.reaction.clickable.active,
+.reaction.selected,
+.reaction.selected .theme-icon-check,
+.sticky-post .theme-icon-pin,
+.contents-menu .sort-buttons a:hover,
+.the-content a:not(.styled),
+.postinfo .category-list a:hover,
+.postinfo .post-tags a,
+#recommended .sort-buttons a:hover,
+#recommended .sort-buttons a.active,
+#comments a.reply-link,
+#comments span.current,
+#comments .pagination a:hover,
+h2.author-name a:hover,
+.template-authors .author-profile-fields a:hover,
+.pagination>span.page-number {
+    color: #BF360C!important;
+}
+
+
+/*Like button*/
+
+a.like-button .unlike {
+    color: #BF360C!important;
+}
+
+.bar-label,
+.sort-sections a.active,
+.trending-color {
+    background-color: #BF360C!important;
+}
+
+.meter-wrapper .meter,
+.large-meter .meter-wrapper .meter {
+    border-color: #BF360C!important;
+}
+
+.sticky-form .sticky-submit,
+#new-articles .selector.active,
+#new-articles .post-container a:hover,
+.article-panel.active .category-icon-wrapper,
+.article-panel.active .user_rating,
+.porthole-color,
+.hero-label,
+.headliner-label,
+.active .headliner-readmore .readmore,
+.trending-color,
+.postinfo .post-tags a:hover {
+    background-color: #BF360C!important;
+}
+
+
+/*addthis widget*/
+
+.addthis_native_counter .addthis_button_expanded {}
+
+.at-icon-wrapper {
+    display: none!important;
+}
+
+
+/*widgets */
+
+.widgets .header {
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.widgets .header .bar-label {
+    border: none;
+    background: none;
+    color: #fff;
+    width: 100%;
+}
+
+.bar-header.sortbar {
+    width: 100%;
+    background-color: #BF360C!important;
+}
+
+.widgets .header .bar-label,
+.widgets .no-color .bar-label {
+    border-right: none;
+}
+
+.bar-label .label-text {
+    color: #fff;
+}
+
+.sort-buttons {
+    float: right;
+}
+
+.info-bottom {
+    border-left: none;
+    color: #fff;
+}
+
+.widgets .header-icon,
+.widgets .bar-label .label-text>span {
+    color: #fff;
 }
