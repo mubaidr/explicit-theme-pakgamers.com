@@ -615,3 +615,37 @@ div.articles.gradient .category-icon-wrapper {
 #footer.widgets .sort-buttons.sort-metrics {
     margin-top: 7px;
 }
+
+
+/*Single post*/
+
+.category-2 .bar-label,
+#directory-2 .bar-label {
+    background: #BF360C!important;
+    border-right: none;
+}
+
+.category-2 .bar-label .theme-icon-bookmark,
+#directory-2 .bar-label .theme-icon- {
+    color: #fff;
+}
+
+.contents-menu .sort-buttons a,
+.contents-menu .sort-buttons a span {
+    border-right: none;
+    color: #fff;
+}
+
+.category-2 .details-box-wrapper,
+.category-2 .total-wrapper,
+.category-2 #comments .comment-rating-inner {
+    border-top-color: #BF360C!important;
+}
+
+.header.section-subtitle {
+    color: #CECEDA;
+}
+
+.procon-box {
+    color: #BDBDBD;
+}
