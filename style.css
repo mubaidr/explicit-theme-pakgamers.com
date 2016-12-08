@@ -8,14 +8,55 @@
  Version:      1.0.0
 */
 
+
+/*Clear box-shadow*/
+
 * {
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
     box-shadow: none!important;
+    -webkit-text-shadow: none!important;
+    -moz-text-shadow: none!important;
+    text-shadow: none!important;
 }
+
+
+/*Clear border-radius*/
+
+a,
+pre,
+input,
+code,
+.btn,
+.label,
+.panel,
+.signoff,
+.jumbotron,
+.badge {
+    border-radius: 0!important;
+}
+
+.layer-gradient,
+.overlay-panel {
+    background: none!important;
+}
+
+.overlay-panel {
+    border-bottom: 5px solid #212121;
+}
+
+
+/*
+*:not(meter-circle-wrapper),
+*:not(meter) {
+    border-radius: 0!important;
+}*/
 
 
 /*Body backgorund image*/
 
-body.home.page.it-background.bp-page {
+body.home.page.it-background.bp-page,
+body.single.single-post.it-background.bp-page {
     /*background-image: url('images/OrangeSquaresBG_updated.jpg')!important;
     background-size: contain!important;
     background-position: center!important;
@@ -115,7 +156,11 @@ div.after-header>.container,
 .container.boxed,
 .ratings .rating-label,
 .ratings.stars-wrapper .rating-value-wrapper {
-    background-color: #212121;
+    background-color: #212121!important;
+}
+
+.container.billboard .container.boxed {
+    background-color: #212121!important;
 }
 
 
@@ -214,33 +259,6 @@ div.after-header>.container,
     color: #BF360C!important;
     font-weight: bold;
 }
-
-
-/*Header bar for widgets*/
-
-
-/*
-.widgets .header {
-    width: 100%;
-    background-color: #fbcd67;
-    border-color: #fab240;
-}
-
-.widgets .header .bar-label,
-.widgets .no-color .bar-label {
-    background-color: #fbcd67;
-    width: 100%;
-}*/
-
-
-/*Header bar icon*/
-
-
-/*
-.widgets .header-icon,
-.widgets .bar-label .label-text>span {
-    color: #000;
-}*/
 
 
 /*Headings*/
@@ -370,6 +388,7 @@ a.like-button .unlike {
 .sort-sections a.active,
 .trending-color {
     background-color: #BF360C!important;
+    border: none;
 }
 
 .meter-wrapper .meter,
@@ -392,21 +411,13 @@ a.like-button .unlike {
 }
 
 
-/*addthis widget*/
-
-.addthis_native_counter .addthis_button_expanded {}
-
-.at-icon-wrapper {
-    display: none!important;
-}
-
-
 /*widgets */
 
 .widgets .header {
     border: none;
     background: none;
     width: 100%;
+    margin-bottom: 0px;
 }
 
 .widgets .header .bar-label {
@@ -442,4 +453,165 @@ a.like-button .unlike {
 .widgets .header-icon,
 .widgets .bar-label .label-text>span {
     color: #fff;
+}
+
+.widgets .overlay-image,
+.widgets .overlay-layer {
+    display: none!important;
+}
+
+.widgets .overlay-panel {
+    border: 1px solid #444;
+    margin-bottom: 7px;
+}
+
+.widgets .sortbar .sort-sections a,
+.info-bottom {
+    border: none!important;
+    color: #fff!important;
+}
+
+.widgets .more-link {}
+
+
+/*header icons*/
+
+
+/*
+.info-bottom {
+    border-left: 0!important;
+}*/
+
+
+/*icons*/
+
+
+/*minisite-movie*/
+
+.category-icon-3 {
+    background-image: url('icons/minisite-movie.png')!important;
+}
+
+
+/*award-tv*/
+
+.category-icon-4 {
+    background-image: url('icons/award-tv.png')!important;
+}
+
+
+/*article title*/
+
+.article-info .article-title,
+.overlay-info .article-title {
+    color: #CECEDA!important;
+}
+
+.post-blog.articles.gradient h2 a {
+    color: #CECEDA!important;
+}
+
+.widgets .loop .more-link,
+.widgets .more-link {
+    background: #212121;
+    border: 1px solid #BF360C;
+    color: #CECEDA;
+    margin: 5px 0;
+}
+
+.articles.compact .badges-wrapper {
+    float: right;
+}
+
+div.articles.gradient .category-icon-wrapper {
+    bottom: 0;
+    position: relative;
+    padding: 2px 5px;
+    background: none;
+}
+
+.articles.gradient.compact .user_rating .stars span {
+    color: #BF360C;
+}
+
+.articles .article-panel.active .user_rating {
+    display: none;
+}
+
+
+/*Add this widget*/
+
+.at-icon-wrapper {
+    display: none!important;
+}
+
+.share-wrapper span.theme-icon-plus {
+    color: #CECEDA;
+}
+
+.addthis_counter .addthis_button_expanded {
+    color: #CECEDA!important;
+}
+
+.share-wrapper .addthis_20x20_style .addthis_counter.addthis_bubble_style.addthis_native_counter a.addthis_button_expanded {
+    color: #CECEDA!important;
+}
+
+
+/*pagination*/
+
+.pagination a:hover,
+.pagination .active,
+.pagination a:active,
+.pagination a.active:hover,
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.hover-text.active,
+.hover-text.active a,
+.woocommerce .woocommerce-breadcrumb a:hover,
+.pagination a span.page-number:hover,
+.utility-menu a:hover {
+    color: #BF360C!important;
+}
+
+.pagination.bar-header {
+    border: 1px solid #BF360C!important;
+    background: none!important;
+}
+
+.pagination.bar-header a.styled {
+    border-style: solid!important;
+    border-width: 0 1px 0 0!important;
+    border-color: #BF360C!important;
+    color: #CECEDA;
+}
+
+.pagination.bar-header a.styled.active {
+    color: #CECEDA;
+}
+
+.pagination.bar-header a.styled.active:hover {
+    color: #CECEDA;
+}
+
+.pagination.bar-header a.styled:hover:not(.active) {
+    color: #BF360C!important;
+}
+
+
+/*footer*/
+
+#footer.widgets .header h3,
+#footer.widgets .bar-label,
+#footer.widgets .no-color .bar-label {
+    background: #BF360C!important;
+    padding: 5px;
+}
+
+#footer.widgets .sort-buttons.sort-metrics {
+    margin-top: 7px;
 }
