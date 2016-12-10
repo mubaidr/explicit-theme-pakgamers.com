@@ -721,3 +721,7 @@ body #scVBRegisteredCommentForm input {
     color: #fff;
     border: none;
 }
+
+.tagcloud a {
+    color: #666;
+}
