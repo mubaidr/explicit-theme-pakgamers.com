@@ -55,14 +55,18 @@ code,
 
 /*Body backgorund image*/
 
+body.it-background,
+body.it-background.blog,
+body.it-background.bp-page,
 body.home.page.it-background.bp-page,
 body.single.single-post.it-background.bp-page {
     /*background-image: url('images/OrangeSquaresBG_updated.jpg')!important;
     background-size: contain!important;
     background-position: center!important;
     background-repeat: repeat!important;*/
-    background-image: none!important;
+    background: #BF360C!important;
     background-color: #BF360C!important;
+    color: #CECEDA;
 }
 
 
@@ -539,6 +543,65 @@ div.articles.gradient .category-icon-wrapper {
 }
 
 
+/*Page grid widget*/
+
+.articles.gradient h3 {
+    position: relative;
+    margin: initial;
+    left: auto;
+    top: auto;
+    bottom: auto;
+}
+
+.articles.gradient .authorship.type-date {
+    margin: 0;
+}
+
+.articles.gradient .user_rating {
+    background: transparent;
+    position: relative;
+    padding: 0;
+    bottom: 0;
+}
+
+.articles .excerpt {
+    color: #CECEDA;
+}
+
+
+/*Paged blog*/
+
+.post-blog.articles.gradient h3 a {
+    color: #fff;
+}
+
+.post-blog.articles.gradient .article-panel.active h3 a {
+    color: #BF360C;
+}
+
+
+/*Top ten*/
+
+#widgets-topten .top-ten-title {
+    color: #fff;
+}
+
+
+/*Email Subscription*/
+
+div.menu-container.bar-header {
+    border: 1px solid #CECEDA!important;
+}
+
+
+/*widget cloumn*/
+
+.widget-panel.left,
+.widget-panel.mid {
+    border: none;
+}
+
+
 /*Add this widget*/
 
 .at-icon-wrapper {
@@ -602,6 +665,13 @@ div.articles.gradient .category-icon-wrapper {
     color: #BF360C!important;
 }
 
+.post-grid .pagination-wrapper,
+.post-grid.hidden-filters .pagination,
+.post-grid .pagination-wrapper.mobile .pagination {
+    float: none;
+    text-align: right;
+}
+
 
 /*footer*/
 
@@ -648,4 +718,76 @@ div.articles.gradient .category-icon-wrapper {
 
 .procon-box {
     color: #BDBDBD;
+}
+
+.billboard-overlay {
+    display: none;
+}
+
+.section-subtitle {
+    color: #CECEDA;
+}
+
+.ratings .form-selector-wrapper {
+    border-color: #BF360C!important;
+}
+
+.reaction.clickable {
+    color: #fff;
+}
+
+.bar-header.full-width {
+    background: none;
+}
+
+.postinfo a.author-name {
+    color: #fff;
+}
+
+#recommended .bar-header .theme-icon-thumbs-up {
+    color: #CECEDA;
+}
+
+#recommended .sort-buttons a {
+    border: none;
+    color: #fff;
+}
+
+#recommended .sort-buttons a.active {
+    border: none;
+}
+
+#comments .comment-author,
+#comments .comment-author a {
+    color: #fff;
+}
+
+#comments .comment-text {
+    color: #CECEDA;
+}
+
+#comments .reply-wrapper {
+    width: 100%;
+}
+
+#comments .comment-moderation {
+    color: #BF360C;
+    padding: 20px 0;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#main-content a.btn,
+#main-content a.btn:link,
+#main-content a.btn:visited {
+    float: right;
+    width: 25%;
+}
+
+h3#reply-title small a {
+    color: #BDBDBD;
+}
+
+#reply-form {
+    border: none;
 }
