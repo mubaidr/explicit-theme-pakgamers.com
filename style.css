@@ -725,3 +725,8 @@ body #scVBRegisteredCommentForm input {
 .tagcloud a {
     color: #666;
 }
+
+.widgets #recentcomments a{
+    color: #fff!important;
+    padding-left: 25px!important;
+}
