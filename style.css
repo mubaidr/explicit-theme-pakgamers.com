@@ -730,3 +730,7 @@ body #scVBRegisteredCommentForm input {
     color: #fff!important;
     padding-left: 25px!important;
 }
+
+.widgets #recentcomments a:hover{
+    color: #BF360C!important;
+}
