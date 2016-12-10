@@ -2,11 +2,11 @@
 Child theme using explicit theme for pakgamers.com
 
 ##How to install
-Install explicit theme
-Download zip file of this repo
-Place the extracted folder in the wordpress installation folder
-Open wordpres dasboard and Aplly "Pakgamers theme"
-Open theme options and setup colors to match ones in the colors/style_options.png file. 
+1. Install explicit theme
+2. Download zip file of this repo
+3. Place the extracted folder in the wordpress installation folder
+4. Open wordpres dasboard and Aplly "Pakgamers theme"
+5. Open theme options and setup colors to match ones in the colors/style_options.png file. 
 
 ##Contents
 ###colors
