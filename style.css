@@ -11,8 +11,6 @@
 
 /*Clear box-shadow*/
 
-
-/*
 * {
     -webkit-box-shadow: none!important;
     -moz-box-shadow: none!important;
@@ -20,7 +18,7 @@
     -webkit-text-shadow: none!important;
     -moz-text-shadow: none!important;
     text-shadow: none!important;
-}*/
+}
 
 
 /*Clear border-radius*/
@@ -68,6 +66,7 @@ body.single.single-post.it-background.bp-page {
     background-repeat: repeat!important;
     background: #BF360C!important;
     */
+    background: none!important;
     background-color: #BF360C!important;
     color: #CECEDA;
 }
@@ -374,10 +373,9 @@ h2.author-name a:hover,
 */
 
 /*Like button*/
-
-/*a.like-button .unlike {
+a.like-button .unlike {
     color: #BF360C!important;
-}*/
+}
 .bar-label,
 .sort-sections a.active,
 .trending-color {
@@ -534,6 +532,7 @@ div.articles.gradient .category-icon-wrapper {
 /*Email Subscription*/
 div.menu-container.bar-header {
     border: 1px solid #CECEDA!important;
+    display: none;
 }
 
 /*widget cloumn*/
@@ -543,6 +542,9 @@ div.menu-container.bar-header {
 }
 
 /*Add this widget*/
+.addthis_toolbox {
+    display: none!important;
+}
 .at-icon-wrapper {
     display: none!important;
 }
@@ -691,5 +693,30 @@ h3#reply-title small a {
     color: #BDBDBD;
 }
 #reply-form {
+    border: none;
+}
+.content-anchor-inner {
+    padding-top: 25px;
+}
+
+/*Single post fixed header bar*/
+.contents-menu .theme-icon-bookmark {
+    color: #fff;
+}
+
+/*New comments*/
+body #scVBConnectorComments a {
+    color: #fff!important;
+}
+body #scVBConnectorComments a:hover {
+    color: #BF360C!important;
+}
+body #scVBRegisteredCommentForm textarea {
+    width: 100%;
+}
+body #scVBRegisteredCommentForm input {
+    padding: 10px 20px;
+    background-color: #BF360C;
+    color: #fff;
     border: none;
 }
