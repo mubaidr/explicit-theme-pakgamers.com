@@ -531,8 +531,9 @@ div.articles.gradient .category-icon-wrapper {
 
 /*Email Subscription*/
 div.menu-container.bar-header {
-    border: 1px solid #CECEDA!important;
-    display: none;
+    border-top: 3px solid #BF360C!important;
+    /* display: none!important; */    
+    margin: 25px 0;
 }
 
 /*widget cloumn*/
