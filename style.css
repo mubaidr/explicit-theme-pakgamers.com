@@ -97,12 +97,17 @@ body.single.single-post.it-background.bp-page {
 
 /*Sidebar main menu*/
 
-#sticky-menu {
-    background-color: #212121;
+#sticky-bar {
+    background-color: #212121!important;
+    border-top: none!important;
+}
+
+#sticky-bar, .mega-wrapper .term-list, .menu-container .standard-menu ul li ul{
+background-color: #212121!important;
 }
 
 #sticky-bar.admin-bar.fixed{
-	border-bottom: 5px solid #BF360C;
+	border-bottom: 5px solid #BF360C!important;
 }
 
 /*Hide header in sidebar main menu*/
