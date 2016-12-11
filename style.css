@@ -101,6 +101,9 @@ body.single.single-post.it-background.bp-page {
     background-color: #212121;
 }
 
+#sticky-bar.admin-bar.fixed{
+	border-bottom: 5px solid #BF360C;
+}
 
 /*Hide header in sidebar main menu*/
 
@@ -733,4 +736,28 @@ body #scVBRegisteredCommentForm input {
 
 .widgets #recentcomments a:hover{
     color: #BF360C!important;
+}
+
+
+/*page content width*/ 
+@media (min-width: 1200px) {
+    .container {
+        width: 1470px!important;
+    }
+}
+
+#comments{
+border-bottom: 3px solid #BF360C!important;
+}
+
+.post .the-content {
+    padding-top: 50px;
+}
+
+.reactions-wrapper{
+    border-bottom: 3px solid #BF360C!important;
+}
+
+#comments ul ul .comment{
+border-bottom: 1px solid #BF360C!important;
 }
