@@ -752,7 +752,8 @@ body #scVBRegisteredCommentForm input {
 }
 
 #comments{
-border-bottom: 3px solid #BF360C!important;
+border-bottom: 3px solid #BF360C!important;	
+border-top: 3px solid #BF360C!important;
 }
 
 .post .the-content {
