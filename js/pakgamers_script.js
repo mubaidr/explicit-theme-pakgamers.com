@@ -1,10 +1,12 @@
 // Function called if AdBlock is not detected
 function adBlockNotDetected() {
-    alert('AdBlock is not enabled');
+    console.log('Hello good gamer! Thanks for not using ad-blocker! Happy Gaming!');
 }
+
 // Function called if AdBlock is detected
 function adBlockDetected() {
-    alert('AdBlock is enabled');
+    //alert('AdBlock is enabled');
+    alert('Hello good gamer! \n\nOur website is made possible by displaying online advertisements to our visitors. \n\nPlease consider supporting us by disabling your ad blocker.');
 }
 
 // Recommended audit because AdBlock lock the file 'blockadblock.js' 
@@ -13,20 +15,13 @@ function adBlockDetected() {
 if (typeof blockAdBlock === 'undefined') {
     adBlockDetected();
 } else {
+
+    blockAdBlock.setOption({
+        debug: true,
+        checkOnLoad: true,
+        resetOnEnd: true
+    });
+
     blockAdBlock.onDetected(adBlockDetected);
     blockAdBlock.onNotDetected(adBlockNotDetected);
-    // and|or
-    blockAdBlock.on(true, adBlockDetected);
-    blockAdBlock.on(false, adBlockNotDetected);
-    // and|or
-    blockAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
 }
-
-// Change the options
-blockAdBlock.setOption('checkOnLoad', false);
-// and|or
-blockAdBlock.setOption({
-    debug: true,
-    checkOnLoad: false,
-    resetOnEnd: false
-});

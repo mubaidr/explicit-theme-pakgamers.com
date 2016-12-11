@@ -5,7 +5,7 @@
  Author:       mubaidr@gmail.com
  Author URI:   www.github.com/mubaidr
  Template:     explicit
- Version:      1.0.0
+ Version:      1.2
 */
 
 
@@ -102,13 +102,16 @@ body.single.single-post.it-background.bp-page {
     border-top: none!important;
 }
 
-#sticky-bar, .mega-wrapper .term-list, .menu-container .standard-menu ul li ul{
-background-color: #212121!important;
+#sticky-bar,
+.mega-wrapper .term-list,
+.menu-container .standard-menu ul li ul {
+    background-color: #212121!important;
 }
 
-#sticky-bar.admin-bar.fixed{
-	border-bottom: 5px solid #BF360C!important;
+#sticky-bar.admin-bar.fixed {
+    border-bottom: 5px solid #BF360C!important;
 }
+
 
 /*Hide header in sidebar main menu*/
 
@@ -540,7 +543,8 @@ div.articles.gradient .category-icon-wrapper {
 /*Email Subscription*/
 div.menu-container.bar-header {
     border-top: 3px solid #BF360C!important;
-    /* display: none!important; */    
+    /* display: none!important; */
+    
     margin: 25px 0;
 }
 
@@ -729,41 +733,33 @@ body #scVBRegisteredCommentForm input {
     color: #fff;
     border: none;
 }
-
 .tagcloud a {
     color: #666;
 }
-
-.widgets #recentcomments a{
+.widgets #recentcomments a {
     color: #fff!important;
     padding-left: 25px!important;
 }
-
-.widgets #recentcomments a:hover{
+.widgets #recentcomments a:hover {
     color: #BF360C!important;
 }
 
-
-/*page content width*/ 
+/*page content width*/
 @media (min-width: 1200px) {
     .container {
         width: 1470px!important;
     }
 }
-
-#comments{
-border-bottom: 3px solid #BF360C!important;	
-border-top: 3px solid #BF360C!important;
+#comments {
+    border-bottom: 3px solid #BF360C!important;
+    border-top: 3px solid #BF360C!important;
 }
-
 .post .the-content {
     padding-top: 50px;
 }
-
-.reactions-wrapper{
+.reactions-wrapper {
     border-bottom: 3px solid #BF360C!important;
 }
-
-#comments ul ul .comment{
-border-bottom: 1px solid #BF360C!important;
+#comments ul ul .comment {
+    border-bottom: 1px solid #BF360C!important;
 }

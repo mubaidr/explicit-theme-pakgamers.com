@@ -1,6 +1,8 @@
 <?php
-    function my_theme_enqueue_styles() {
+    function my_theme_enqueue_styles_scripts() {
         $parent_style = 'parent-style';
+        $jquery = 'jquery';
+        
         wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
         
         wp_enqueue_style( 'child-style',
@@ -10,16 +12,16 @@
         );
 
         wp_enqueue_script(
-            'block-adblock-script',
+            'blockadblock',
             get_stylesheet_directory_uri() . '/js/blockadblock.js',
-            array( 'blockadblock' )
+            array( $jquery )
         );
 
         wp_enqueue_script(
             'pakgamers_script',
             get_stylesheet_directory_uri() . '/js/pakgamers_script.js',
-            array( 'pakgamers_script' )
+            array( $jquery )
         );
     }
-    add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+    add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles_scripts' );
 ?>
