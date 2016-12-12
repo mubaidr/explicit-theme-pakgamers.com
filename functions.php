@@ -20,21 +20,28 @@
         );
 
         wp_enqueue_script(
-            'bootstrap_dialog_js',
-            get_stylesheet_directory_uri() . '/js/bootstrap-dialog.min.js',
-            array( $jquery )
-        );
-
-        wp_enqueue_script(
             'blockadblock',
             get_stylesheet_directory_uri() . '/js/blockadblock.js',
             array( $jquery )
         );
+        
+        wp_enqueue_script(
+            'bootstrap',
+            get_stylesheet_directory_uri() . '/js/bootstrap.min.js',
+            array( $jquery )
+        );
+
+        wp_enqueue_script(
+            'bootstrap_dialog_js',
+            get_stylesheet_directory_uri() . '/js/bootstrap-dialog.min.js',
+            array( 'bootstrap' )
+        );
+
 
         wp_enqueue_script(
             'pakgamers_script',
             get_stylesheet_directory_uri() . '/js/pakgamers_script.js',
-            array( $jquery )
+            array( 'bootstrap_dialog_js' )
         );
     }
     add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles_scripts' );
