@@ -5,10 +5,24 @@
         
         wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
         
-        wp_enqueue_style( 'child-style',
+        wp_enqueue_style(
+            'child-style',
             get_stylesheet_directory_uri() . '/style.css',
             array( $parent_style ),
             wp_get_theme()->get('Version')
+        );
+
+        wp_enqueue_style(
+            'bootstrap-dialog',
+            get_stylesheet_directory_uri() . '/css/bootstrap-dialog.min.css',
+            array( $parent_style ),
+            wp_get_theme()->get('Version')
+        );
+
+        wp_enqueue_script(
+            'bootstrap-dialog',
+            get_stylesheet_directory_uri() . '/js/bootstrap-dialog.min.js',
+            array( $jquery )
         );
 
         wp_enqueue_script(

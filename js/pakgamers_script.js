@@ -5,8 +5,20 @@ function adBlockNotDetected() {
 
 // Function called if AdBlock is detected
 function adBlockDetected() {
-    //alert('AdBlock is enabled');
-    alert('Hello good gamer! \n\nOur website is made possible by displaying online advertisements to our visitors. \n\nPlease consider supporting us by disabling your ad blocker.');
+    
+    if (typeof BootstrapDialog === 'undefined') {
+        alert('Hey PGers! \n\nPakGamers is a large, free media publication, forum and marketplace. \nTo keep it free, we work really hard with content creators, moderators, our community and supporters. \n\nSo please support us by disabling Adblock on PakGamers and making PakGamers an execption in your Adblock. We promise to keep the Adverts unobtrusive to you experience.');
+    } else {    
+        BootstrapDialog.show({
+            type: BootstrapDialog.TYPE_WARNING,
+            title: 'Hey PGers!',
+            message: 'PakGamers is a large, free media publication, forum and marketplace. <br/>To keep it free, we work really hard with content creators, moderators, our community and supporters. <br/><br/>So please support us by disabling Adblock on PakGamers and making PakGamers an execption in your Adblock. We promise to keep the Adverts unobtrusive to you experience.',
+            buttons: [{
+                label: 'Ok.'
+            }]
+        });
+    }
+
 }
 
 // Recommended audit because AdBlock lock the file 'blockadblock.js' 
