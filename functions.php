@@ -13,14 +13,14 @@
         );
 
         wp_enqueue_style(
-            'bootstrap-dialog',
+            'bootstrap_dialog_css',
             get_stylesheet_directory_uri() . '/css/bootstrap-dialog.min.css',
             array( $parent_style ),
             wp_get_theme()->get('Version')
         );
 
         wp_enqueue_script(
-            'bootstrap-dialog',
+            'bootstrap_dialog_js',
             get_stylesheet_directory_uri() . '/js/bootstrap-dialog.min.js',
             array( $jquery )
         );
