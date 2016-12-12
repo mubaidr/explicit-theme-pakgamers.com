@@ -12,10 +12,7 @@ function adBlockDetected() {
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_DANGER,
             title: 'Important!',
-            message: 'Hey PGers! PakGamers is a large, free media publication, forum and marketplace. <br/>To keep it free, we work really hard with content creators, moderators, our community and supporters. <br/><br/>So please support us by disabling Adblock on PakGamers and making PakGamers an execption in your Adblock. We promise to keep the Adverts unobtrusive to you experience.',
-            buttons: [{
-                label: 'Ok'
-            }]
+            message: '<b>Hey PGers!</b> <br/><br/>PakGamers is a large, free media publication, forum and marketplace. <br/>To keep it free, we work really hard with content creators, moderators, our community and supporters. <br/><br/>So please support us by disabling Adblock on PakGamers and making PakGamers an execption in your Adblock. We promise to keep the Adverts unobtrusive to you experience.'
         });
     }
 
