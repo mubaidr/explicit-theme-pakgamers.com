@@ -591,12 +591,14 @@ div.menu-container.bar-header {
 }
 .pagination.bar-header {
     border: 1px solid #BF360C!important;
+    border: 1px solid rgba(191, 54, 12, 0.33)!important;
     background: none!important;
 }
 .pagination.bar-header a.styled {
     border-style: solid!important;
     border-width: 0 1px 0 0!important;
     border-color: #BF360C!important;
+    border-color: rgba(191, 54, 12, 0.33)!important;
     color: #CECEDA;
 }
 .pagination.bar-header a.styled.active {
