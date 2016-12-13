@@ -7,12 +7,12 @@ function adBlockNotDetected() {
 function adBlockDetected() {
     
     if (typeof BootstrapDialog === 'undefined') {
-        alert('Hey PGers! \n\nPakGamers is a large, free media publication, forum and marketplace. \nTo keep it free, we work really hard with content creators, moderators, our community and supporters. \n\nSo please support us by disabling Adblock on PakGamers and making PakGamers an execption in your Adblock. We promise to keep the Adverts unobtrusive to you experience.');
+        alert('Hey PGers! \n\nPakGamers is a large, free media publication, forum and marketplace. \nTo keep it free, we work really hard with content creators, moderators, our community and supporters. \n\nSo please support us by disabling Adblock on PakGamers and making www.PakGamers.com an exception in your Adblock. We promise to keep the Adverts unobtrusive to your experience.');
     } else {    
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_DANGER,
             title: 'Important!',
-            message: '<b>Hey PGers!</b> <br/><br/>PakGamers is a large, free media publication, forum and marketplace. <br/>To keep it free, we work really hard with content creators, moderators, our community and supporters. <br/><br/>So please support us by disabling Adblock on PakGamers and making PakGamers an execption in your Adblock. We promise to keep the Adverts unobtrusive to you experience.'
+            message: '<b>Hey PGers!</b> <br/><br/>PakGamers is a large, free media publication, forum and marketplace. <br/>To keep it free, we work really hard with content creators, moderators, our community and supporters. <br/><br/>So please support us by disabling Adblock on PakGamers and making www.PakGamers.com an exception in your Adblock. We promise to keep the Adverts unobtrusive to your experience.'
         });
     }
 
