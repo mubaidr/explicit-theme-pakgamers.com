@@ -483,6 +483,12 @@ a.like-button .unlike {
 .post-blog.articles.gradient h2 a {
     color: #CECEDA!important;
 }*/
+.widgets ul li a {
+    color: #CECEDA;
+}
+.compact-panel .article-title {
+    color: #CECEDA;
+}
 .widgets .loop .more-link,
 .widgets .more-link {
     background: #212121;
@@ -767,6 +773,6 @@ body #scVBRegisteredCommentForm input {
 }
 
 /*bootstrap-dialog-message*/
-.bootstrap-dialog-message{
+.bootstrap-dialog-message {
     color: #212121;
 }

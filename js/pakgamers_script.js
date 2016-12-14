@@ -26,7 +26,7 @@ if (typeof blockAdBlock === 'undefined') {
 } else {
 
     blockAdBlock.setOption({
-        debug: true,
+        debug: false,
         checkOnLoad: true,
         resetOnEnd: true
     });
